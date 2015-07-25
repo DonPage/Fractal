@@ -11,8 +11,13 @@ angular.module('starter.controllers', [])
         $scope.SettingsService = SettingsService;
 
         $scope.sensitivity = SettingsService.get('sensitivity');
+        $scope.ip = SettingsService.get('ip');
 
         $scope.sensitivityChange = function (val) {
             SettingsService.set('sensitivity', val);
-        }
+        };
+
+        $scope.ipChange = function (val) {
+            SettingsService.set('ip', val);
+        };
     });
