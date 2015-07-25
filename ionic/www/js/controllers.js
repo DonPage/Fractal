@@ -1,5 +1,9 @@
 angular.module('starter.controllers', [])
 
     .controller('HomeCtrl', function($scope) {
-            $scope.hello = "Hello";
+
+        $scope.updateMousePos = function ($event) {
+            console.log($event);
+        }
+
     });
