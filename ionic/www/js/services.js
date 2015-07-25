@@ -9,7 +9,11 @@ angular.module('starter.services', [])
         var SettingService = {};
 
         SettingService.get = function (key) {
-            return window.localStorage[key] ? window.localStorage[key] : defaults[key];
+            return window.localStorage[key];
+        };
+
+        SettingService.set = function (key, val) {
+            window.localStorage[key] = val;
         };
 
         return SettingService;

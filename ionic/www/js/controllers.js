@@ -7,6 +7,12 @@ angular.module('starter.controllers', [])
 
     })
 
-    .controller("SettingsCtrl", function ($scope) {
+    .controller("SettingsCtrl", function ($scope, SettingsService) {
+        $scope.SettingsService = SettingsService;
 
+        $scope.sensitivity = SettingsService.get('sensitivity');
+
+        $scope.sensitivityChange = function (val) {
+            SettingsService.set('sensitivity', val);
+        }
     });

@@ -1,5 +1,16 @@
 <ion-view view-title="Settings">
     <ion-content>
 
+        <div class="item item-divider">
+            Sensitivity
+        </div>
+
+        <div class="list">
+            <div class="item range range-positive">
+                <input ng-model="sensitivity" ng-change="sensitivityChange(sensitivity)" type="range" min="0" max="100">
+                <span ng-bind="sensitivity"></span>
+            </div>
+        </div>
+
     </ion-content>
 </ion-view>
