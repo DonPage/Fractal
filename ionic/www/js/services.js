@@ -25,5 +25,13 @@ angular.module('starter.services', [])
 
         var SocketService = {};
 
+        SocketService.emit = function (event, obj) {
+            _io.emit(event, obj);
+        };
+
+        SocketService.on = function (event, callback) {
+            _io.on(event, callback);
+        };
+
         return SocketService;
     });
