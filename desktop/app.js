@@ -7,6 +7,7 @@
 var server = require('http').createServer();
 var io = require('socket.io')(server);
 
+var config = require('./config');
 
 var robot = require('robotjs');
 
@@ -33,7 +34,8 @@ io.on('connection', function (socket) {
 
 
 });
-server.listen(3000, '0.0.0.0');
+
+server.listen(config.port, config.ip);
 
 
 /**
