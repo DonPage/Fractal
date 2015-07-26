@@ -21,8 +21,7 @@ angular.module('starter.services', [])
 
     .factory('SocketService', function (SettingsService) {
 
-        //var _io = SettingsService.get('ip') ? io(SettingsService.get('ip')) : io();
-        var _io = io('http://localhost:3000');
+        var _io = SettingsService.get('ip') ? io(SettingsService.get('ip')) : io();
 
         var SocketService = {};
 

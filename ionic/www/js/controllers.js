@@ -1,13 +1,22 @@
 angular.module('starter.controllers', [])
-    .controller('HomeCtrl', function($scope, SocketService) {
+    .controller('HomeCtrl', function($scope, SocketService, SettingsService) {
 
         $scope.updateMousePos = function ($event) {
-            console.log("event", $event);
+            var mouseEvent = {
+                deltaX : $event.gesture.deltaX,
+                deltaY: $event.gesture.deltaY,
+                sensitivity: SettingsService.get('sensitivity')
+            };
 
-            SocketService.moveMouse('x', 'y'); //testing;
+            SocketService.emit('movemouse', JSON.stringify(mouseEvent));
+        };
 
-            console.log($event);
+        $scope.leftClick = function () {
+            SocketService.emit('leftclick');
+        };
 
+        $scope.rightClick = function () {
+            SocketService.emit('rightclick')
         };
 
     })
