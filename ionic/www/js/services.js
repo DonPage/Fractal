@@ -1,9 +1,9 @@
 angular.module('starter.services', [])
 
-.factory('SettingsService', function() {
+    .factory('SettingsService', function() {
 
         var defaults = {
-            'sensitivity' : 1
+            'sensitivity' : 1,
         };
 
         var SettingService = {};
@@ -17,4 +17,13 @@ angular.module('starter.services', [])
         };
 
         return SettingService;
-});
+    })
+
+    .factory('SocketService', function (SettingsService) {
+
+        var _io = SettingsService.get('ip') ? io(SettingsService.get('ip')) : io();
+
+        var SocketService = {};
+
+        return SocketService;
+    });
