@@ -1,7 +1,10 @@
 angular.module('starter.controllers', [])
-    .controller('HomeCtrl', function($scope) {
+    .controller('HomeCtrl', function($scope, SocketService) {
 
         $scope.updateMousePos = function ($event) {
+            console.log("event", $event);
+
+            SocketService.moveMouse('x', 'y'); //testing;
 
         };
 
