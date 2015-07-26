@@ -10,6 +10,8 @@ var io = require('socket.io')(server);
 
 var robot = require('robotjs');
 
+var mouseDragMod = 0.0015;
+
 io.on('connection', function (socket) {
 
     socket.on('leftclick', function (data) {
@@ -21,11 +23,11 @@ io.on('connection', function (socket) {
     socket.on('movemouse', function (data) {
         var parse = JSON.parse(data);
         var mouse = robot.getMousePos();
-        console.log(mouse.x, mouse.y);
+        //console.log(mouse.x, mouse.y);
 
-        robot.moveMouse(mouse.x + (parse.deltaX * 0.001), mouse.y + (parse.deltaY * 0.001));
+        robot.moveMouse(mouse.x + (parse.deltaX * (mouseDragMod * parse.sensitivity)), mouse.y + (parse.deltaY * (mouseDragMod * parse.sensitivity)));
 
-        console.log(parse.deltaX, parse.deltaY);
+        //console.log(parse.deltaX, parse.deltaY);
 
     })
 
