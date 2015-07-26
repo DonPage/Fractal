@@ -1,0 +1,465 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--msvs_version=2012' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 warn package.json desktop@1.0.0 No description
+5 warn package.json desktop@1.0.0 No repository field.
+6 warn package.json desktop@1.0.0 No README data
+7 verbose install where, deps [ 'c:\\Users\\Terence\\IdeaProjects\\Fractal\\desktop',
+7 verbose install   [ 'robotjs', 'socket.io' ] ]
+8 verbose install where, peers [ 'c:\\Users\\Terence\\IdeaProjects\\Fractal\\desktop', [] ]
+9 info preinstall desktop@1.0.0
+10 silly cache add args [ 'robotjs@^0.1.4', null ]
+11 verbose cache add spec robotjs@^0.1.4
+12 verbose already installed skipping socket.io@^1.3.6 c:\Users\Terence\IdeaProjects\Fractal\desktop
+13 silly cache add parsed spec { raw: 'robotjs@^0.1.4',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'robotjs',
+13 silly cache add   rawSpec: '^0.1.4',
+13 silly cache add   spec: '>=0.1.4 <0.2.0',
+13 silly cache add   type: 'range' }
+14 verbose addNamed robotjs@>=0.1.4 <0.2.0
+15 silly addNamed semver.valid null
+16 silly addNamed semver.validRange >=0.1.4 <0.2.0
+17 silly addNameRange { name: 'robotjs', range: '>=0.1.4 <0.2.0', hasData: false }
+18 silly mapToRegistry name robotjs
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/robotjs
+22 verbose addNameRange registry:https://registry.npmjs.org/robotjs not in flight; fetching
+23 verbose request uri https://registry.npmjs.org/robotjs
+24 verbose request no auth needed
+25 info attempt registry request try #1 at 9:58:28 PM
+26 verbose request id 2abfdf0dfe18043e
+27 verbose etag "6S5ZS329152SWW741RUCVR7O"
+28 http request GET https://registry.npmjs.org/robotjs
+29 http 304 https://registry.npmjs.org/robotjs
+30 silly get cb [ 304,
+30 silly get   { date: 'Sun, 26 Jul 2015 01:58:27 GMT',
+30 silly get     via: '1.1 varnish',
+30 silly get     'cache-control': 'max-age=60',
+30 silly get     etag: '"6S5ZS329152SWW741RUCVR7O"',
+30 silly get     age: '0',
+30 silly get     connection: 'keep-alive',
+30 silly get     'x-served-by': 'cache-jfk1029-JFK',
+30 silly get     'x-cache': 'MISS',
+30 silly get     'x-cache-hits': '0',
+30 silly get     'x-timer': 'S1437875907.863200,VS0,VE79',
+30 silly get     vary: 'Accept' } ]
+31 verbose etag https://registry.npmjs.org/robotjs from cache
+32 verbose get saving robotjs to C:\Users\Terence\AppData\Roaming\npm-cache\registry.npmjs.org\robotjs\.cache.json
+33 silly addNameRange number 2 { name: 'robotjs', range: '>=0.1.4 <0.2.0', hasData: true }
+34 silly addNameRange versions [ 'robotjs',
+34 silly addNameRange   [ '0.0.1',
+34 silly addNameRange     '0.0.2',
+34 silly addNameRange     '0.0.3',
+34 silly addNameRange     '0.0.4',
+34 silly addNameRange     '0.0.5',
+34 silly addNameRange     '0.1.0',
+34 silly addNameRange     '0.1.1',
+34 silly addNameRange     '0.1.2',
+34 silly addNameRange     '0.1.3',
+34 silly addNameRange     '0.1.4',
+34 silly addNameRange     '0.2.0',
+34 silly addNameRange     '0.2.1' ] ]
+35 verbose addNamed robotjs@0.1.4
+36 silly addNamed semver.valid 0.1.4
+37 silly addNamed semver.validRange 0.1.4
+38 silly cache afterAdd robotjs@0.1.4
+39 verbose afterAdd C:\Users\Terence\AppData\Roaming\npm-cache\robotjs\0.1.4\package\package.json not in flight; writing
+40 verbose afterAdd C:\Users\Terence\AppData\Roaming\npm-cache\robotjs\0.1.4\package\package.json written
+41 silly install resolved [ { name: 'robotjs',
+41 silly install resolved     version: '0.1.4',
+41 silly install resolved     description: 'Node.js Desktop Automation.',
+41 silly install resolved     main: 'index.js',
+41 silly install resolved     scripts: { test: 'node test/all.js', install: 'node-gyp rebuild' },
+41 silly install resolved     repository: { type: 'git', url: 'https://github.com/octalmage/robotjs.git' },
+41 silly install resolved     keywords:
+41 silly install resolved      [ 'Automation',
+41 silly install resolved        'GUI',
+41 silly install resolved        'mouse',
+41 silly install resolved        'keyboard',
+41 silly install resolved        'screenshot',
+41 silly install resolved        'image',
+41 silly install resolved        'pixel' ],
+41 silly install resolved     author: { name: 'Jason Stallings' },
+41 silly install resolved     license: 'MIT',
+41 silly install resolved     gypfile: true,
+41 silly install resolved     bugs: { url: 'https://github.com/octalmage/robotjs/issues' },
+41 silly install resolved     homepage: 'https://github.com/octalmage/robotjs',
+41 silly install resolved     dependencies: { nan: '^1.3.0' },
+41 silly install resolved     devDependencies: { tape: '^3.5.0' },
+41 silly install resolved     gitHead: 'c982f0aa69e91156a7aebaafe5de10e399ad43f8',
+41 silly install resolved     _id: 'robotjs@0.1.4',
+41 silly install resolved     _shasum: '88eeb44a4f217942f89f8a7f16e4473429226f7a',
+41 silly install resolved     _from: 'robotjs@>=0.1.4 <0.2.0',
+41 silly install resolved     _npmVersion: '1.4.26',
+41 silly install resolved     _npmUser: { name: 'octalmage', email: 'jason@stallin.gs' },
+41 silly install resolved     maintainers: [ [Object] ],
+41 silly install resolved     dist:
+41 silly install resolved      { shasum: '88eeb44a4f217942f89f8a7f16e4473429226f7a',
+41 silly install resolved        tarball: 'http://registry.npmjs.org/robotjs/-/robotjs-0.1.4.tgz' },
+41 silly install resolved     directories: {},
+41 silly install resolved     _resolved: 'https://registry.npmjs.org/robotjs/-/robotjs-0.1.4.tgz',
+41 silly install resolved     readme: 'ERROR: No README data found!' } ]
+42 info install robotjs@0.1.4 into c:\Users\Terence\IdeaProjects\Fractal\desktop
+43 info installOne robotjs@0.1.4
+44 verbose installOne of robotjs to c:\Users\Terence\IdeaProjects\Fractal\desktop not in flight; installing
+45 verbose lock using C:\Users\Terence\AppData\Roaming\npm-cache\_locks\robotjs-fd49be5a5f3d61f1.lock for c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs
+46 silly install write writing robotjs 0.1.4 to c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs
+47 silly cache addNamed cb robotjs@0.1.4
+48 verbose unbuild node_modules\robotjs
+49 verbose gentlyRm vacuuming c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs
+50 verbose tar unpack C:\Users\Terence\AppData\Roaming\npm-cache\robotjs\0.1.4\package.tgz
+51 verbose tar unpacking to c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs
+52 verbose gentlyRm vacuuming c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs
+53 silly gunzTarPerm modes [ '777', '666' ]
+54 silly gunzTarPerm extractEntry package.json
+55 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+56 silly gunzTarPerm extractEntry .npmignore
+57 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+58 silly gunzTarPerm extractEntry README.md
+59 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+60 silly gunzTarPerm extractEntry index.js
+61 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+62 silly gunzTarPerm extractEntry .travis.yml
+63 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+64 silly gunzTarPerm extractEntry binding.gyp
+65 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+66 silly gunzTarPerm extractEntry src/microsleep.h
+67 silly gunzTarPerm modified mode [ 'src/microsleep.h', 420, 438 ]
+68 silly gunzTarPerm extractEntry src/MMBitmap.c
+69 silly gunzTarPerm modified mode [ 'src/MMBitmap.c', 420, 438 ]
+70 silly gunzTarPerm extractEntry src/MMPointArray.c
+71 silly gunzTarPerm modified mode [ 'src/MMPointArray.c', 420, 438 ]
+72 silly gunzTarPerm extractEntry src/MMPointArray.h
+73 silly gunzTarPerm modified mode [ 'src/MMPointArray.h', 420, 438 ]
+74 silly gunzTarPerm extractEntry src/UTHashTable.c
+75 silly gunzTarPerm modified mode [ 'src/UTHashTable.c', 420, 438 ]
+76 silly gunzTarPerm extractEntry src/UTHashTable.h
+77 silly gunzTarPerm modified mode [ 'src/UTHashTable.h', 420, 438 ]
+78 silly gunzTarPerm extractEntry src/alert.c
+79 silly gunzTarPerm modified mode [ 'src/alert.c', 420, 438 ]
+80 silly gunzTarPerm extractEntry src/alert.h
+81 silly gunzTarPerm modified mode [ 'src/alert.h', 420, 438 ]
+82 silly gunzTarPerm extractEntry src/base64.c
+83 silly gunzTarPerm modified mode [ 'src/base64.c', 420, 438 ]
+84 silly gunzTarPerm extractEntry src/base64.h
+85 silly gunzTarPerm modified mode [ 'src/base64.h', 420, 438 ]
+86 silly gunzTarPerm extractEntry src/bitmap_find.c
+87 silly gunzTarPerm modified mode [ 'src/bitmap_find.c', 420, 438 ]
+88 silly gunzTarPerm extractEntry src/bitmap_find.h
+89 silly gunzTarPerm modified mode [ 'src/bitmap_find.h', 420, 438 ]
+90 silly gunzTarPerm extractEntry src/bmp_io.c
+91 silly gunzTarPerm modified mode [ 'src/bmp_io.c', 420, 438 ]
+92 silly gunzTarPerm extractEntry src/bmp_io.h
+93 silly gunzTarPerm modified mode [ 'src/bmp_io.h', 420, 438 ]
+94 silly gunzTarPerm extractEntry src/color_find.c
+95 silly gunzTarPerm modified mode [ 'src/color_find.c', 420, 438 ]
+96 silly gunzTarPerm extractEntry src/color_find.h
+97 silly gunzTarPerm modified mode [ 'src/color_find.h', 420, 438 ]
+98 silly gunzTarPerm extractEntry src/deadbeef_rand.c
+99 silly gunzTarPerm modified mode [ 'src/deadbeef_rand.c', 420, 438 ]
+100 silly gunzTarPerm extractEntry src/deadbeef_rand.h
+101 silly gunzTarPerm modified mode [ 'src/deadbeef_rand.h', 420, 438 ]
+102 silly gunzTarPerm extractEntry src/endian.h
+103 silly gunzTarPerm modified mode [ 'src/endian.h', 420, 438 ]
+104 silly gunzTarPerm extractEntry src/inline_keywords.h
+105 silly gunzTarPerm modified mode [ 'src/inline_keywords.h', 420, 438 ]
+106 silly gunzTarPerm extractEntry src/io.c
+107 silly gunzTarPerm modified mode [ 'src/io.c', 420, 438 ]
+108 silly gunzTarPerm extractEntry src/io.h
+109 silly gunzTarPerm modified mode [ 'src/io.h', 420, 438 ]
+110 silly gunzTarPerm extractEntry src/keycode.c
+111 silly gunzTarPerm modified mode [ 'src/keycode.c', 420, 438 ]
+112 silly gunzTarPerm extractEntry src/keycode.h
+113 silly gunzTarPerm modified mode [ 'src/keycode.h', 420, 438 ]
+114 silly gunzTarPerm extractEntry src/keypress.c
+115 silly gunzTarPerm modified mode [ 'src/keypress.c', 420, 438 ]
+116 silly gunzTarPerm extractEntry src/keypress.h
+117 silly gunzTarPerm modified mode [ 'src/keypress.h', 420, 438 ]
+118 silly gunzTarPerm extractEntry src/MMBitmap.h
+119 silly gunzTarPerm modified mode [ 'src/MMBitmap.h', 420, 438 ]
+120 silly gunzTarPerm extractEntry src/mouse.c
+121 silly gunzTarPerm modified mode [ 'src/mouse.c', 420, 438 ]
+122 silly gunzTarPerm extractEntry src/mouse.h
+123 silly gunzTarPerm modified mode [ 'src/mouse.h', 420, 438 ]
+124 silly gunzTarPerm extractEntry src/ms_stdbool.h
+125 silly gunzTarPerm modified mode [ 'src/ms_stdbool.h', 420, 438 ]
+126 silly gunzTarPerm extractEntry src/ms_stdint.h
+127 silly gunzTarPerm modified mode [ 'src/ms_stdint.h', 420, 438 ]
+128 silly gunzTarPerm extractEntry src/os.h
+129 silly gunzTarPerm modified mode [ 'src/os.h', 420, 438 ]
+130 silly gunzTarPerm extractEntry src/pasteboard.c
+131 silly gunzTarPerm modified mode [ 'src/pasteboard.c', 420, 438 ]
+132 silly gunzTarPerm extractEntry src/pasteboard.h
+133 silly gunzTarPerm modified mode [ 'src/pasteboard.h', 420, 438 ]
+134 silly gunzTarPerm extractEntry src/png_io.c
+135 silly gunzTarPerm modified mode [ 'src/png_io.c', 420, 438 ]
+136 silly gunzTarPerm extractEntry src/png_io.h
+137 silly gunzTarPerm modified mode [ 'src/png_io.h', 420, 438 ]
+138 silly gunzTarPerm extractEntry src/rgb.h
+139 silly gunzTarPerm modified mode [ 'src/rgb.h', 420, 438 ]
+140 silly gunzTarPerm extractEntry src/robotjs.cc
+141 silly gunzTarPerm modified mode [ 'src/robotjs.cc', 420, 438 ]
+142 silly gunzTarPerm extractEntry src/screen.c
+143 silly gunzTarPerm modified mode [ 'src/screen.c', 420, 438 ]
+144 silly gunzTarPerm extractEntry src/screen.h
+145 silly gunzTarPerm modified mode [ 'src/screen.h', 420, 438 ]
+146 silly gunzTarPerm extractEntry src/screengrab.c
+147 silly gunzTarPerm modified mode [ 'src/screengrab.c', 420, 438 ]
+148 silly gunzTarPerm extractEntry src/screengrab.h
+149 silly gunzTarPerm modified mode [ 'src/screengrab.h', 420, 438 ]
+150 silly gunzTarPerm extractEntry src/snprintf.c
+151 silly gunzTarPerm modified mode [ 'src/snprintf.c', 420, 438 ]
+152 silly gunzTarPerm extractEntry src/snprintf.h
+153 silly gunzTarPerm modified mode [ 'src/snprintf.h', 420, 438 ]
+154 silly gunzTarPerm extractEntry src/str_io.c
+155 silly gunzTarPerm modified mode [ 'src/str_io.c', 420, 438 ]
+156 silly gunzTarPerm extractEntry src/str_io.h
+157 silly gunzTarPerm modified mode [ 'src/str_io.h', 420, 438 ]
+158 silly gunzTarPerm extractEntry src/types.h
+159 silly gunzTarPerm modified mode [ 'src/types.h', 420, 438 ]
+160 silly gunzTarPerm extractEntry src/uthash.h
+161 silly gunzTarPerm modified mode [ 'src/uthash.h', 420, 438 ]
+162 silly gunzTarPerm extractEntry src/xdisplay.c
+163 silly gunzTarPerm modified mode [ 'src/xdisplay.c', 420, 438 ]
+164 silly gunzTarPerm extractEntry src/xdisplay.h
+165 silly gunzTarPerm modified mode [ 'src/xdisplay.h', 420, 438 ]
+166 silly gunzTarPerm extractEntry src/zlib_util.c
+167 silly gunzTarPerm modified mode [ 'src/zlib_util.c', 420, 438 ]
+168 silly gunzTarPerm extractEntry src/zlib_util.h
+169 silly gunzTarPerm modified mode [ 'src/zlib_util.h', 420, 438 ]
+170 silly gunzTarPerm extractEntry test/all.js
+171 silly gunzTarPerm modified mode [ 'test/all.js', 420, 438 ]
+172 silly gunzTarPerm extractEntry test/mouse.js
+173 silly gunzTarPerm modified mode [ 'test/mouse.js', 420, 438 ]
+174 info preinstall robotjs@0.1.4
+175 silly prepareForInstallMany adding nan@^1.3.0 from robotjs dependencies
+176 silly cache add args [ 'nan@^1.3.0', null ]
+177 verbose cache add spec nan@^1.3.0
+178 silly cache add parsed spec { raw: 'nan@^1.3.0',
+178 silly cache add   scope: null,
+178 silly cache add   name: 'nan',
+178 silly cache add   rawSpec: '^1.3.0',
+178 silly cache add   spec: '>=1.3.0 <2.0.0',
+178 silly cache add   type: 'range' }
+179 verbose addNamed nan@>=1.3.0 <2.0.0
+180 silly addNamed semver.valid null
+181 silly addNamed semver.validRange >=1.3.0 <2.0.0
+182 silly addNameRange { name: 'nan', range: '>=1.3.0 <2.0.0', hasData: false }
+183 silly mapToRegistry name nan
+184 silly mapToRegistry using default registry
+185 silly mapToRegistry registry https://registry.npmjs.org/
+186 silly mapToRegistry uri https://registry.npmjs.org/nan
+187 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+188 verbose request uri https://registry.npmjs.org/nan
+189 verbose request no auth needed
+190 info attempt registry request try #1 at 9:58:29 PM
+191 verbose etag "9T2TEINHQE1CYR42PWQNCEY3X"
+192 http request GET https://registry.npmjs.org/nan
+193 http 304 https://registry.npmjs.org/nan
+194 silly get cb [ 304,
+194 silly get   { date: 'Sun, 26 Jul 2015 01:58:28 GMT',
+194 silly get     via: '1.1 varnish',
+194 silly get     'cache-control': 'max-age=60',
+194 silly get     etag: '"9T2TEINHQE1CYR42PWQNCEY3X"',
+194 silly get     age: '5',
+194 silly get     connection: 'keep-alive',
+194 silly get     'x-served-by': 'cache-jfk1025-JFK',
+194 silly get     'x-cache': 'HIT',
+194 silly get     'x-cache-hits': '1',
+194 silly get     'x-timer': 'S1437875908.215609,VS0,VE1',
+194 silly get     vary: 'Accept' } ]
+195 verbose etag https://registry.npmjs.org/nan from cache
+196 verbose get saving nan to C:\Users\Terence\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+197 silly addNameRange number 2 { name: 'nan', range: '>=1.3.0 <2.0.0', hasData: true }
+198 silly addNameRange versions [ 'nan',
+198 silly addNameRange   [ '0.3.0-wip',
+198 silly addNameRange     '0.3.0-wip2',
+198 silly addNameRange     '0.3.0',
+198 silly addNameRange     '0.3.1',
+198 silly addNameRange     '0.3.2',
+198 silly addNameRange     '0.4.0',
+198 silly addNameRange     '0.4.1',
+198 silly addNameRange     '0.4.2',
+198 silly addNameRange     '0.4.3',
+198 silly addNameRange     '0.4.4',
+198 silly addNameRange     '0.5.0',
+198 silly addNameRange     '0.5.1',
+198 silly addNameRange     '0.5.2',
+198 silly addNameRange     '0.6.0',
+198 silly addNameRange     '0.7.0',
+198 silly addNameRange     '0.7.1',
+198 silly addNameRange     '0.8.0',
+198 silly addNameRange     '1.0.0',
+198 silly addNameRange     '1.1.0',
+198 silly addNameRange     '1.1.1',
+198 silly addNameRange     '1.1.2',
+198 silly addNameRange     '1.2.0',
+198 silly addNameRange     '1.3.0',
+198 silly addNameRange     '1.4.0',
+198 silly addNameRange     '1.4.1',
+198 silly addNameRange     '1.5.0',
+198 silly addNameRange     '1.4.2',
+198 silly addNameRange     '1.4.3',
+198 silly addNameRange     '1.5.1',
+198 silly addNameRange     '1.5.2',
+198 silly addNameRange     '1.6.0',
+198 silly addNameRange     '1.5.3',
+198 silly addNameRange     '1.6.1',
+198 silly addNameRange     '1.6.2',
+198 silly addNameRange     '1.7.0',
+198 silly addNameRange     '1.8.0',
+198 silly addNameRange     '1.8.1',
+198 silly addNameRange     '1.8.2',
+198 silly addNameRange     '1.8.3',
+198 silly addNameRange     '1.8.4' ] ]
+199 verbose addNamed nan@1.8.4
+200 silly addNamed semver.valid 1.8.4
+201 silly addNamed semver.validRange 1.8.4
+202 silly cache afterAdd nan@1.8.4
+203 verbose afterAdd C:\Users\Terence\AppData\Roaming\npm-cache\nan\1.8.4\package\package.json not in flight; writing
+204 verbose afterAdd C:\Users\Terence\AppData\Roaming\npm-cache\nan\1.8.4\package\package.json written
+205 silly install resolved [ { name: 'nan',
+205 silly install resolved     version: '1.8.4',
+205 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+205 silly install resolved     main: 'include_dirs.js',
+205 silly install resolved     repository: { type: 'git', url: 'git://github.com/iojs/nan.git' },
+205 silly install resolved     scripts:
+205 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+205 silly install resolved        'rebuild-tests': 'pangyp rebuild --directory test' },
+205 silly install resolved     contributors:
+205 silly install resolved      [ [Object],
+205 silly install resolved        [Object],
+205 silly install resolved        [Object],
+205 silly install resolved        [Object],
+205 silly install resolved        [Object],
+205 silly install resolved        [Object],
+205 silly install resolved        [Object] ],
+205 silly install resolved     devDependencies:
+205 silly install resolved      { bindings: '~1.2.1',
+205 silly install resolved        'node-gyp': '~1.0.2',
+205 silly install resolved        pangyp: '~2.0.1',
+205 silly install resolved        tap: '~0.7.1',
+205 silly install resolved        xtend: '~4.0.0' },
+205 silly install resolved     license: 'MIT',
+205 silly install resolved     gitHead: 'ed3bbf4ced0cf7937b4e4164766797f71aa97f3d',
+205 silly install resolved     bugs: { url: 'https://github.com/iojs/nan/issues' },
+205 silly install resolved     homepage: 'https://github.com/iojs/nan#readme',
+205 silly install resolved     _id: 'nan@1.8.4',
+205 silly install resolved     _shasum: '3c76b5382eab33e44b758d2813ca9d92e9342f34',
+205 silly install resolved     _from: 'nan@>=1.3.0 <2.0.0',
+205 silly install resolved     _npmVersion: '2.8.3',
+205 silly install resolved     _nodeVersion: '0.12.2',
+205 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+205 silly install resolved     maintainers: [ [Object], [Object] ],
+205 silly install resolved     dist:
+205 silly install resolved      { shasum: '3c76b5382eab33e44b758d2813ca9d92e9342f34',
+205 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.8.4.tgz' },
+205 silly install resolved     directories: {},
+205 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.8.4.tgz',
+205 silly install resolved     readme: 'ERROR: No README data found!' } ]
+206 info install nan@1.8.4 into c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs
+207 info installOne nan@1.8.4
+208 verbose installOne of nan to c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs not in flight; installing
+209 verbose lock using C:\Users\Terence\AppData\Roaming\npm-cache\_locks\nan-34c0dbb0e7bfdc66.lock for c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs\node_modules\nan
+210 silly install write writing nan 1.8.4 to c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs\node_modules\nan
+211 silly cache addNamed cb nan@1.8.4
+212 verbose unbuild node_modules\robotjs\node_modules\nan
+213 verbose gentlyRm vacuuming c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs\node_modules\nan
+214 verbose tar unpack C:\Users\Terence\AppData\Roaming\npm-cache\nan\1.8.4\package.tgz
+215 verbose tar unpacking to c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs\node_modules\nan
+216 verbose gentlyRm vacuuming c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs\node_modules\nan
+217 silly gunzTarPerm modes [ '777', '666' ]
+218 silly gunzTarPerm extractEntry package.json
+219 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+220 silly gunzTarPerm extractEntry README.md
+221 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+222 silly gunzTarPerm extractEntry include_dirs.js
+223 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+224 silly gunzTarPerm extractEntry LICENSE.md
+225 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+226 silly gunzTarPerm extractEntry .dntrc
+227 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
+228 silly gunzTarPerm extractEntry appveyor.yml
+229 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
+230 silly gunzTarPerm extractEntry nan.h
+231 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+232 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+233 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+234 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+235 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+236 silly gunzTarPerm extractEntry nan_new.h
+237 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+238 silly gunzTarPerm extractEntry nan_string_bytes.h
+239 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+240 silly gunzTarPerm extractEntry CHANGELOG.md
+241 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+242 info preinstall nan@1.8.4
+243 silly install resolved []
+244 verbose about to build c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs\node_modules\nan
+245 info build c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs\node_modules\nan
+246 verbose linkStuff [ false,
+246 verbose linkStuff   false,
+246 verbose linkStuff   false,
+246 verbose linkStuff   'c:\\Users\\Terence\\IdeaProjects\\Fractal\\desktop\\node_modules\\robotjs\\node_modules' ]
+247 info linkStuff nan@1.8.4
+248 verbose linkBins nan@1.8.4
+249 verbose linkMans nan@1.8.4
+250 verbose rebuildBundles nan@1.8.4
+251 info install nan@1.8.4
+252 info postinstall nan@1.8.4
+253 verbose unlock done using C:\Users\Terence\AppData\Roaming\npm-cache\_locks\nan-34c0dbb0e7bfdc66.lock for c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs\node_modules\nan
+254 verbose about to build c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs
+255 info build c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs
+256 verbose linkStuff [ false,
+256 verbose linkStuff   false,
+256 verbose linkStuff   false,
+256 verbose linkStuff   'c:\\Users\\Terence\\IdeaProjects\\Fractal\\desktop\\node_modules' ]
+257 info linkStuff robotjs@0.1.4
+258 verbose linkBins robotjs@0.1.4
+259 verbose linkMans robotjs@0.1.4
+260 verbose rebuildBundles robotjs@0.1.4
+261 verbose rebuildBundles [ 'nan' ]
+262 info install robotjs@0.1.4
+263 verbose unsafe-perm in lifecycle true
+264 info robotjs@0.1.4 Failed to exec install script
+265 verbose unlock done using C:\Users\Terence\AppData\Roaming\npm-cache\_locks\robotjs-fd49be5a5f3d61f1.lock for c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs
+266 verbose stack Error: robotjs@0.1.4 install: `node-gyp rebuild`
+266 verbose stack Exit status 1
+266 verbose stack     at EventEmitter.<anonymous> (c:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+266 verbose stack     at EventEmitter.emit (events.js:110:17)
+266 verbose stack     at ChildProcess.<anonymous> (c:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\spawn.js:14:12)
+266 verbose stack     at ChildProcess.emit (events.js:110:17)
+266 verbose stack     at maybeClose (child_process.js:1008:16)
+266 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1080:5)
+267 verbose pkgid robotjs@0.1.4
+268 verbose cwd c:\Users\Terence\IdeaProjects\Fractal\desktop
+269 error Windows_NT 6.3.9600
+270 error argv "c:\\Program Files (x86)\\nodejs\\node.exe" "c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--msvs_version=2012"
+271 error node v0.12.0
+272 error npm  v2.5.1
+273 error code ELIFECYCLE
+274 error robotjs@0.1.4 install: `node-gyp rebuild`
+274 error Exit status 1
+275 error Failed at the robotjs@0.1.4 install script 'node-gyp rebuild'.
+275 error This is most likely a problem with the robotjs package,
+275 error not with npm itself.
+275 error Tell the author that this fails on your system:
+275 error     node-gyp rebuild
+275 error You can get their info via:
+275 error     npm owner ls robotjs
+275 error There is likely additional logging output above.
+276 verbose exit [ 1, true ]
+277 verbose unbuild node_modules\robotjs
+278 info preuninstall robotjs@0.1.4
+279 info uninstall robotjs@0.1.4
+280 verbose unbuild rmStuff robotjs@0.1.4 from c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules
+281 info postuninstall robotjs@0.1.4
+282 verbose gentlyRm vacuuming c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs
+283 silly gentlyRm purging c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules\robotjs
+284 silly gentlyRm quitting because other entries in c:\Users\Terence\IdeaProjects\Fractal\desktop\node_modules
