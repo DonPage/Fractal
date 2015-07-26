@@ -7,6 +7,7 @@
 var server = require('http').createServer();
 var io = require('socket.io')(server);
 
+
 var robot = require('robotjs');
 
 io.on('connection', function (socket) {
@@ -22,7 +23,7 @@ io.on('connection', function (socket) {
         var mouse = robot.getMousePos();
         console.log(mouse.x, mouse.y);
 
-        robot.moveMouse(mouse.x + parse.deltaX, mouse.y + parse.deltaY);
+        robot.moveMouse(mouse.x + (parse.deltaX * 0.001), mouse.y + (parse.deltaY * 0.001));
 
         console.log(parse.deltaX, parse.deltaY);
 
@@ -30,7 +31,7 @@ io.on('connection', function (socket) {
 
 
 });
-server.listen(3000);
+server.listen(3000, '0.0.0.0');
 
 
 /**
