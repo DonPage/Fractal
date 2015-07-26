@@ -9,7 +9,7 @@ var io = require('socket.io')(server);
 
 var robot = require('robotjs');
 
-io.on('connection', function(socket){
+io.on('connection', function (socket) {
 
     socket.on('leftclick', function (data) {
         console.log("leftclick:", data);
@@ -17,17 +17,16 @@ io.on('connection', function(socket){
     });
 
 
-
     socket.on('movemouse', function (data) {
         var parse = JSON.parse(data);
+        var mouse = robot.getMousePos();
+        console.log(mouse.x, mouse.y);
 
-        //var mouse = robot.getMousePos();
+        robot.moveMouse(mouse.x + parse.deltaX, mouse.y + parse.deltaY);
 
-        console.log(parse);
+        console.log(parse.deltaX, parse.deltaY);
 
     })
-
-
 
 
 });
