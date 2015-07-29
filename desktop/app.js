@@ -7,28 +7,37 @@
 var server = require('http').createServer();
 var io = require('socket.io')(server);
 
+console.log("app.js");
+
 var config = require('./config');
 
 var robot = require('robotjs');
 
-var mouseDragMod = 0.0015;
+var mouseDragMod = 0.055;
+
+var velocityDragMod = 0.152;
+
 
 io.on('connection', function (socket) {
+
+    console.log("CONNECT");
 
     socket.on('leftclick', function (data) {
         console.log("leftclick:", data);
         robot.mouseClick();
     });
 
-
     socket.on('movemouse', function (data) {
         var parse = JSON.parse(data);
         var mouse = robot.getMousePos();
         //console.log(mouse.x, mouse.y);
+        //console.log(parse.velX, parse.velY);
+        var newX = mouse.x + parse.deltaX * (mouseDragMod * parse.sensitivity);
+        var newY = mouse.y + parse.deltaY * (mouseDragMod * parse.sensitivity);
 
-        robot.moveMouse(mouse.x + (parse.deltaX * (mouseDragMod * parse.sensitivity)), mouse.y + (parse.deltaY * (mouseDragMod * parse.sensitivity)));
+        robot.moveMouse(newX, newY);
 
-        //console.log(parse.deltaX, parse.deltaY);
+
 
     })
 

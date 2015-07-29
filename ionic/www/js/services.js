@@ -3,7 +3,7 @@ angular.module('starter.services', [])
     .factory('SettingsService', function() {
 
         var defaults = {
-            'sensitivity' : 1,
+            'sensitivity' : 1
         };
 
         var SettingService = {};

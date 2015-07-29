@@ -1,14 +1,23 @@
 angular.module('starter.controllers', [])
     .controller('HomeCtrl', function($scope, SocketService, SettingsService) {
 
-        $scope.updateMousePos = function ($event) {
-            var mouseEvent = {
-                deltaX : $event.gesture.deltaX,
-                deltaY: $event.gesture.deltaY,
-                sensitivity: SettingsService.get('sensitivity')
-            };
+        var mouseEvent = null;
 
-            SocketService.emit('movemouse', JSON.stringify(mouseEvent));
+        $scope.updateMouseStart = function () {
+          mouseEvent = null;
+        };
+
+        $scope.updateMousePos = function ($event) {
+            //console.log($event);
+
+            if (mouseEvent) {
+                var adjustments = {sensitivity: SettingsService.get('sensitivity')};
+                console.log("adjustments:", adjustments);
+                var deltaObj = {deltaX: $event.gesture.deltaX - mouseEvent.x, deltaY: $event.gesture.deltaY - mouseEvent.y, sensitivity: adjustments.sensitivity};
+                SocketService.emit('movemouse', JSON.stringify(deltaObj))
+            }
+            mouseEvent = {x: $event.gesture.deltaX, y: $event.gesture.deltaY};
+
         };
 
         $scope.leftClick = function () {
